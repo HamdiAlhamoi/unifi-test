@@ -1,0 +1,11 @@
+{
+	"model": "User",
+	"documents": [
+		{
+			"_id": "6026fe33328dcf2310b6aabb",
+			"name": "Hamdi Alhamoi",
+			"email": "hamdialhamoi@gmail.com",
+			"password": "1234567sMhA@@"
+		}
+	]
+}

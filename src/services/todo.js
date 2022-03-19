@@ -31,8 +31,13 @@ class TodoService {
 	}
 
 	static async get(id) {
-		let result =await Todo.findOne({_id:id,userId:'6026fe33328dcf2310b6aabb'});
-        if(!result) throw new Exception(errors.ITEM_NOT_FOUND);
+        let result
+        if(id){
+            result =await Todo.findOne({_id:id,userId:'6026fe33328dcf2310b6aabb'});
+            if(!result) throw new Exception(errors.ITEM_NOT_FOUND);
+        }
+        result =await Todo.find({userId:'6026fe33328dcf2310b6aabb'})
+		
         return result;
 
 	}
