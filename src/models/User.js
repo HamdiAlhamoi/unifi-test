@@ -12,7 +12,7 @@ const UserSchema = new Schema(
 			type: String,
 			required: true,
 			trim: true,
-			select: false,
+			select: true,
 			set: (val) => (val ? bcrypt.hashSync(val, 10) : undefined),
 		},
 		updatedAt: { type: Date, select: false },

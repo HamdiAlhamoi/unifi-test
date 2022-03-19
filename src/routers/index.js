@@ -6,6 +6,8 @@ const router = require('express').Router();
 
 router.use('/todo', require('./todo'));
 
+router.use('/auth', require('./auth'));
+
 
 
 
